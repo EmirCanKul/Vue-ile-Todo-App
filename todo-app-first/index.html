@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <title>todo-app-first</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
+
+
+<!-- 
+
+    data() {
+            return {
+                itemTitle: '',
+                items: [],
+            }
+        },
+        methods: {
+            addItem() {
+                if (!this.itemTitle) {
+                    return;
+                }
+
+                this.items.push({
+                    title: this.itemTitle,
+                    done: false,
+                });
+
+                this.itemTitle = '';
+            },
+            deleteItem(index) {
+                this.items.splice(index, 1);
+            },
+            changeItemStatus(index) {
+                const item = this.items[index];
+                this.items[index].done = !item.done;
+            }
+        },
+        mounted() {
+            const items = localStorage.getItem(localKey) || '[]';
+            this.items = JSON.parse(items);
+        },
+        watch: {
+            items: {
+                deep: true,
+                handler(items) {
+                    localStorage.setItem(localKey, JSON.stringify(items))
+
+                }
+            }
+        }
+ -->
